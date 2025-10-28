@@ -33,7 +33,7 @@ Engineered features include:
 The pie chart below shows the breakdown of churned (17.7%) and retained (82.3%) users in the data set.
 
 
-[INSERT PIC]
+![Pie Chart:](/Visuals/ChurnRate.png)
 
 
 ## Modeling and Evaluation
@@ -42,9 +42,13 @@ The pie chart below shows the breakdown of churned (17.7%) and retained (82.3%) 
 4. Random Forest Model
 5. XGBoost Model
 
-Hypothesis testing explored potential differences in user behavior between iPhone and Android drivers; however, no statistically significant relationships were found between device type and any other variables. Of the preditive models above, the XGBoost model was the highest performing with an 81% accuracy, 16% recall, and 43% precision. The top three most important factors in determining user churn included kilometers driven per hour, number of days after onbaording, and total navigations to a user's favorite destination, all of which were engineered features. 
+Hypothesis testing explored potential differences in user behavior between iPhone and Android drivers; however, no statistically significant relationships were found between device type and any other variables. Of the preditive models above, the XGBoost model was the highest performing with an 81% accuracy, 16% recall, and 43% precision. Figure 1 below depicts the model's confusion matrix. Figure 2 below shows the top three most important factors in determining user churn as determined by the XGBoost model, which include kilometers driven per hour, number of days after onbaording, and total navigations to a user's favorite destination, all of which were engineered features.
 
-[INSERT PIC]
+*Figure 1:*
+![XGBoos](/Visuals/ConfusionMatrixXGBoost.png)
+
+*Figure 2:*
+![XGBoost](/Visuals/FeatureImportanceXGBoost.png)
 
 ## Business Recommendations:
 Recommendations derived from the XGBoost Model include: 
